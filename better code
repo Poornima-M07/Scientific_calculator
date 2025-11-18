@@ -1,0 +1,45 @@
+import math
+def sqrt(x) :
+    return math.sqrt(x)
+def sin(x):
+    return math.sin(math.radians(x))
+
+def cos(x):
+    return math.cos(math.radians(x))
+
+def tan(x):
+    return math.tan(math.radians(x))
+    
+def sec(x):
+    return 1/math.sin(math.radians(x))
+def cosec(x):
+    return 1/math.cos(math.radians(x))
+def cot(x):
+    return 1/math.tan(math.radians(x))           
+
+print("Choose: \n 1.Simple calculator \n 2. square root\n 3.Trigonometry")
+choice = input('')    
+if choice == "1":
+    
+   calc = (input("Type calculation:\n"))
+    
+   print("Answer: " + str(eval(calc)))
+elif choice == "2":
+    num = float(input("Enter number: "))
+    print(f"Square Root({num}): {sqrt(num)}") 
+elif choice == "3":
+    print("(a. sin, b. cos, c. tan, d. sec, e. cosec, f. cot)")
+func = input("")
+num == float(input("Enter number (degrees for sin/cos/tan/asin/acos/atan): "))
+if func == "a":
+    print(f"sin({num}°): {sin(num)}")
+if func == "b":
+    print(f"cos({num}°): {cos(num)}")
+if func == "c":
+    print(f"tan({num}°): {tan(num)}")
+if func == "d":
+    print(f"sec({num}°): {sec(num)}")
+if func == "e":
+    print(f"cosec({num}°): {cosec(num)}")
+if func == "f":
+    print(f"cot({num}°): {cot(num)}")           
